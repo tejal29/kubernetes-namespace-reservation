@@ -23,7 +23,7 @@ items:
         serviceAccountName: server
         containers:
         - name: c
-          image: your-docker-user-name/namespace-reservation-server:latest
+          image: gcr.io/tejaldesai-personal/namespace-reservation-server:latest
           imagePullPolicy: IfNotPresent
           command:
           - "/usr/bin/namespace-reservation-server"

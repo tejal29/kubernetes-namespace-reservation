@@ -4,11 +4,11 @@ all: build
 REPO ?=
 
 build:
-	go build -o _output/bin/namespace-reservation-server github.com/openshift/kubernetes-namespace-reservation/cmd/namespacereservationserver
+	go build -o _output/bin/namespace-reservation-server github.com/tejal29/kubernetes-namespace-reservation/cmd/namespacereservationserver
 .PHONY: build
 
 build-image:
-	GOOS=linux go build -o _output/bin/namespace-reservation-server github.com/openshift/kubernetes-namespace-reservation/cmd/namespacereservationserver
+	GOOS=linux go build -o _output/bin/namespace-reservation-server github.com/tejal29/kubernetes-namespace-reservation/cmd/namespacereservationserver
 	REPO=$(REPO) hack/build-image.sh
 .PHONY: build-image
 
